@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ascii.css">
+    <title>CS472: ASCII Animation Viewer</title>
+</head>
+
+<body>
+    <div class="mybox">
+        <h1>CSE 190 M ASCII Animation Viewer</h1>
+        <div class="viewground">
+            <textarea id="mytextarea"></textarea>
+            <div class="contoller">
+                <div class="box_div">
+                    <h6>Play Control :</h6>
+                    <button type="button" id="start">Start</button>
+                    <button type="button" id="stop" disabled>Stop</button>
+                </div>
+                <div class="box_div">
+                    <h6>Animation :</h6>
+                    <select id="animations">
+                        <option value="Blank">Blank</option>
+                        <option value="Exercise">Exercise</option>
+                        <option value="Juggler">Juggler</option>
+                        <option value="Bike">Bike</option>
+                        <option value="Dive">dive</option>
+                        <option value="Custom">Custom</option>
+
+                    </select>
+                </div>
+
+                <div class="box_div ">
+                    <h6>Size :</h6>
+                    <select name="size" id="size">
+                        <option value="7">Tiny </option>
+                        <option value="10">Small </option>
+                        <option value="12" selected>Medium </option>
+                        <option value="16">Large </option>
+                        <option value="24"> Extra Large </option>
+                        <option value="32">XXL </option>
+                    </select>
+                </div>
+                <div class="box_div ">
+                    <h6>Speed :</h6>
+                    <input value="1" id="speed" type="checkbox" />Turbo
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="animations.js"></script>
+    <script src="ascii.js"></script>
+</body>
+
+</html>
